@@ -48,7 +48,3 @@ Al modificar el archivo `index.html` en el host, el cambio es visible inmediatam
 ### 3. Prueba de Caché
 En las herramientas de desarrollador del navegador (F12 -> Network), las imágenes deben mostrar la cabecera:
 `X-Cache-Status: HIT` tras la segunda carga.
-
----
-
-**Desarrollado como parte de la práctica de despliegue de infraestructuras.**
