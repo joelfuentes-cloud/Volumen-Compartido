@@ -57,5 +57,10 @@ Pagina web en funcionamiento:
 Balanceo de carga en funcionamiento, mediante los logs:
 <img width="958" height="910" alt="image" src="https://github.com/user-attachments/assets/64d7f713-fa4d-4778-823c-f80b95904c59" />
 
+Verificacion del Caché:
+A mi me sale EXPIRED porque una vez se crea la caché, hay un tiempo de 10 minutos antes de que expire, y esto lo hice hace dias, pero a ti te saldrá HIT sin ningun problema.
+<img width="781" height="437" alt="image" src="https://github.com/user-attachments/assets/5498f718-60eb-461d-9588-1fb0d14280ad" />
+
+
 
 Prueba de caché:
