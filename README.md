@@ -50,4 +50,12 @@ En las herramientas de desarrollador del navegador (F12 -> Network), las imágen
 `X-Cache-Status: HIT` tras la segunda carga.
 
 
+Pagina web en funcionamiento:
 <img width="1778" height="672" alt="image" src="https://github.com/user-attachments/assets/661d4d4f-af38-466b-84e1-6a38407da8c9" />
+
+
+Balanceo de carga en funcionamiento, mediante los logs:
+<img width="958" height="910" alt="image" src="https://github.com/user-attachments/assets/64d7f713-fa4d-4778-823c-f80b95904c59" />
+
+
+Prueba de caché:
