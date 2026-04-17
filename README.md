@@ -2,7 +2,7 @@
 
 El sistema está compuesto por tres contenedores interconectados dentro de una red privada de Docker:
 
-1.  **Nginx (Proxy & Load Balancer):** * Escucha peticiones externas en el puerto `8080`.
+1.  **Nginx (Proxy & Balanceador):** * Escucha peticiones externas en el puerto `8080`.
     * Reparte el tráfico entre los servidores Apache (Balanceo).
     * Gestiona una zona de caché para reducir la latencia en la carga de imágenes.
 2.  **Apache 1 & Apache 2 (Backends):** * Dos instancias independientes que procesan las peticiones HTTP.
@@ -12,10 +12,10 @@ El sistema está compuesto por tres contenedores interconectados dentro de una r
 
 ## 🛠️ Configuraciones Implementadas
 
-### 🔹 Balanceo de Carga (Round Robin)
+### 🔹 Balanceo de Carga
 Se ha configurado un bloque `upstream` en Nginx. Esto permite que, si un servidor se satura o cae, el otro pueda seguir dando servicio, garantizando la **Alta Disponibilidad**.
 
-### 🔹 Volumen Compartido (Persistencia)
+### 🔹 Volumen Compartido
 Gracias al uso de **bind mounts** en el archivo `docker-compose.yml`, cualquier cambio realizado en el archivo `index.html` de nuestra carpeta local se refleja instantáneamente en ambos servidores Apache sin necesidad de reiniciar o reconstruir los contenedores.
 
 ### 🔹 Optimización con Caché
